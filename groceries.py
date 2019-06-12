@@ -41,7 +41,7 @@ print("-------------")
 
 for p in products:
     price_usd = p["price"]
-    price_usd = "${0:.2f}". format (6.5)
+    price_usd = "{0:.2f}". format (p["price"])
     print(" ... " + p["name"] + " ($" + str(price_usd) +")")
 
 
