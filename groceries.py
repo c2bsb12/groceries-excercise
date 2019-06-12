@@ -33,14 +33,22 @@ print(products)
 #"one string" + "another string"
 #print("There are 20 products:")
 
+products_count=len(products)
 
-#print("-------------")
-#print(f"There are {products_count} products:")
-#print("-------------")
+print("-------------")
+print("There are " + str(products_count) + " products:")
+print("-------------")
+
+for p in products:
+    price_usd = p["price"]
+    price_usd = "${0:.2f}". format (6.5)
+    print(" ... " + p["name"] + " ($" + str(price_usd) +")")
 
 
 #for item in products:
-    #print (item["name"])
+    #price_usd = p("price")
+    #print("..." + p["name"] + "(" + price_usd + ")")
+   # print (item["name"])
     #print(f"{item['name']}...{item['price']}")
     
    # price_usd = to_usd(item['price'])
