@@ -39,10 +39,13 @@ print("-------------")
 print("There are " + str(products_count) + " products:")
 print("-------------")
 
+#Sort by name
+
 def sort_by_name(any_product):
     return any_product ["name"]
 
 sorted_products = sorted(products, key=sort_by_name)
+
 
 for p in products:
     price_usd = p["price"]
